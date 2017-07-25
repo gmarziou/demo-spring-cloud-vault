@@ -2,9 +2,9 @@ spring:
     cloud:
         # Configuration for a vault server running in dev mode
         vault:
+            scheme: http
             host: localhost
             port: 8200
-            scheme: http
             connection-timeout: 5000
             read-timeout: 15000
             authentication: TOKEN
