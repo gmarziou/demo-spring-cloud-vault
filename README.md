@@ -11,7 +11,9 @@ These properties are defined differently according to active Spring profile(s).
 
 ## Starting Vault server
 
-Following command starts a vault server in dev mode with a known initial root token that we can use for dev and tests and listening on http://localhost:8200
+To simplfy things, we use Vault in [dev mode](https://www.vaultproject.io/docs/concepts/dev-server.html) but this demo can adapted to use a real configuration with authentication and TLS connections, spring-cloud-vault as [some doc](https://github.com/spring-cloud/spring-cloud-vault/blob/master/README.adoc#quick-start) and bash scripts to make it easy.
+
+Command below starts a Vault server in dev mode with a known initial root token that we can use for dev and tests and listening on http://localhost:8200
 
 ~~~
 vault server -dev -log-level=INFO -dev-root-token-id=00000000-0000-0000-0000-000000000000
